@@ -1,0 +1,7 @@
+#root {
+  background-color: var(--cafe);
+}
+
+.semana-clases {
+  overflow-y: auto;
+}

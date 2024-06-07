@@ -1,0 +1,8 @@
+.boton-info {
+  background-color: #e91e63;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

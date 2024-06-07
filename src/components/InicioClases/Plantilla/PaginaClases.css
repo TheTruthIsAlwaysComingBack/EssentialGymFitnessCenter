@@ -1,0 +1,16 @@
+.pagina-clases {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.cabezal {
+  top: 0;
+  width: 100%;
+}
+
+.semana-clases {
+  flex: 1;
+  margin-top: 5px; /* Ajusta esto según el tamaño del cabezal */
+  overflow-y: auto;
+}
