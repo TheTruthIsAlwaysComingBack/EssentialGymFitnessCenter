@@ -1,0 +1,17 @@
+.google-button {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid var(--rosa);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.google-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}

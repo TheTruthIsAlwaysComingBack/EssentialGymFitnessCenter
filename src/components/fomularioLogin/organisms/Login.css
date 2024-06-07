@@ -1,0 +1,29 @@
+.login-organism {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 32rem;
+  height: 63.9rem;
+  text-align: center;
+}
+
+.login-organism h1 {
+  margin: 0;
+}
+
+.login-organism p {
+  margin: 10px 0;
+}
+
+.login-google-button {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.login-organism a {
+  text-decoration: none;
+  color: var(--bg);
+  cursor: pointer;
+}
