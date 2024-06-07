@@ -7,11 +7,13 @@ import "./Login.css";
 const Login = ({ onSubmit }) => {
   return (
     <div className="login-organism">
-      <Image />
-      <h1>BIENVENIDO!</h1>
-      <p>Usa tus credenciales e inicia sesión en tu cuenta</p>
-      <LoginForm onSubmit={onSubmit} />
+      <div className="login-initial-menssage">
+        <Image />
+        <h1>BIENVENIDO!</h1>
+        <p>Usa tus credenciales e inicia sesión en tu cuenta</p>
+      </div>
       <div className="login-google-button">
+        <LoginForm onSubmit={onSubmit} />
         <p>O Ingresa con</p>
         <GoogleButton
           onClick={() =>

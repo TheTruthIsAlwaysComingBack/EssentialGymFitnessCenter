@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import EyeIcon from "./EyeIcon";
+import EyeIconOff from "./EyeIconOff";
+import CircleCheck from "./CircleCheck";
 import "./Input.css";
 
 const Input = ({ type, placeholder, value, onChange }) => {
@@ -18,11 +21,13 @@ const Input = ({ type, placeholder, value, onChange }) => {
         className="input"
       />
       {type === "email" && value.includes("@") && (
-        <span className="input-icon">✔️</span>
+        <span className="input-icon">
+          <CircleCheck />
+        </span>
       )}
       {type === "password" && (
         <span className="input-icon" onClick={handleToggleVisibility}>
-          {isPasswordVisible ? "🙈" : "👁️"}
+          {isPasswordVisible ? <EyeIcon /> : <EyeIconOff />}
         </span>
       )}
     </div>
