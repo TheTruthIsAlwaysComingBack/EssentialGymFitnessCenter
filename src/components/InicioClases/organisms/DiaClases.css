@@ -1,0 +1,15 @@
+.dia-clases {
+  margin: 20px 0;
+}
+
+.titulo-dia {
+  font-size: 24px;
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.clases-contenedor {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}

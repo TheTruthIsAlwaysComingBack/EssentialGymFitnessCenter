@@ -1,0 +1,14 @@
+.RaBotonTarClaseASus {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.RaBotonTarClaseASus input[type="radio"] {
+  margin-right: 10px;
+}
+
+.RaBotonTarClaseASus label {
+  font-size: 16px;
+  color: #2b2024;
+}
