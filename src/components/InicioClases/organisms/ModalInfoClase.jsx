@@ -12,9 +12,12 @@ const ModalInfoClase = ({ isOpen, onClose }) => {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        <button className="close-button" onClick={onClose}>
-          X
-        </button>
+        <div className="CabezalModalInfoClase">
+          <h4 className="TituloModalInfoClase">INFORMACIÓN DE LA CLASE</h4>
+          <button className="close-button" onClick={onClose}>
+            X
+          </button>
+        </div>
         <div className="info-contenedor">
           <TarjetaDesClase />
           <CoachesPage />

@@ -1,12 +1,5 @@
-.coaches-section {
-  margin: 20px 0;
-}
-
 .coaches-section h2 {
-  color: #e91e63;
-}
-
-.coaches-container {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
+  color: #e91e63;
 }
