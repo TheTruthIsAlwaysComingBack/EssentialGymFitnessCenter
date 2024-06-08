@@ -1,0 +1,7 @@
+.botonAceptarCanceClase {
+  background-color: #fd0054;
+  color: #ffffff;
+  padding: 10px 20px; 
+  cursor: pointer;
+  border-radius: 10%;
+}
