@@ -1,18 +1,20 @@
-// CoachesSection.jsx
 import React from 'react';
 import CoachCard from './CoachCard';
 import './CoachesSection.css';
 
-const CoachesSection = ({ coach }) => {
+const CoachesSection = ({ coaches }) => {
   return (
     <div className="coaches-section">
       <h2>Coach</h2>
       <div className="coaches-container">
-        <CoachCard
-          image={coach.image}
-          name={coach.nameTrainer}
-          specialty={coach.TrainerSpecialty}
-        />
+        {coaches.map((coach) => (
+          <CoachCard
+            key={coach.id}
+            image={coach.image}
+            name={coach.nameTrainer}
+            specialty={coach.TrainerSpecialty}
+          />
+        ))}
       </div>
     </div>
   );

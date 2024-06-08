@@ -1,11 +1,15 @@
 .dia-clases {
   margin: 20px 0;
+  background-color: #f0bdce;
 }
 
 .titulo-dia {
+  display: flex;
+  justify-content: flex-start;
   font-size: 24px;
   color: #e91e63;
   margin-bottom: 10px;
+  margin: 2%;
 }
 
 .clases-contenedor {

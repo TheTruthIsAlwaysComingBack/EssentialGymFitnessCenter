@@ -1,5 +1,10 @@
 .coaches-section h2 {
-  display: flex;
-  justify-content: flex-start;
   color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.coaches-container {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 10px;
 }
