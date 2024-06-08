@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import DateInfoTarClaseASus from "./DateInfoTarClaseASus";
 import ModalNoSeleHora from "../../VentanaNoSeleccionoHora/ModalNoSeleHora";
 import VentanaGracias from "../../VentanaGraciasSus/VentanaGracias";
+import { useNavigate } from "react-router-dom";
 import "./TarjetaClaseASus.css";
 
 const TarjetaClaseASus = () => {
@@ -9,6 +10,7 @@ const TarjetaClaseASus = () => {
   const [classData, setClassData] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [ventanaGraciasOpen, setVentanaGraciasOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("https://661037cf0640280f219c98d3.mockapi.io/api/gym/Clases")
@@ -56,7 +58,7 @@ const TarjetaClaseASus = () => {
   };
 
   const verSuscripciones = () => {
-    // Lógica para redirigir a la vista de suscripciones
+    navigate("/Suscripciones");
   };
 
   if (!classData) {
