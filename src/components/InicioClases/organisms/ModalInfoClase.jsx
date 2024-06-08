@@ -24,9 +24,6 @@ const ModalInfoClase = ({ isOpen, onClose }) => {
           <TarjetaClaseASus />
         </div>
         <div className="linea-blanca"></div>
-        <button className="boton-suscribir" onClick={() => alert("Suscrito!")}>
-          SUSCRIBIRSE
-        </button>
       </div>
     </div>
   );

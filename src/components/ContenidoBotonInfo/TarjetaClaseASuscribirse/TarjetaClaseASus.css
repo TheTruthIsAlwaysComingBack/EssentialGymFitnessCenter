@@ -13,3 +13,14 @@
   text-align: center;
   margin-bottom: 20px;
 }
+
+.BotonSuscribirse {
+  background-color: #fd0054;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
