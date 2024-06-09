@@ -1,0 +1,15 @@
+.CoachesSectionEntrenadores {
+  padding: 20px;
+}
+
+.TituloSeccionEntrenadores {
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.CoachesContainerEntrenadores {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

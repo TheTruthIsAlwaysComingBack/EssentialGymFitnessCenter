@@ -4,6 +4,7 @@ import Login from "../login/Logueo";
 import PaginaClases from "../../components/InicioClases/Plantilla/PaginaClases";
 import PaginaSubscripciones from "../../components/PaginaSuscripciones/PaginaSubscripciones";
 import ServicioAlCliente from "../ServicioAlCliente/ServicioAlCliente";
+import Entrenadores from "../Entrenadores/Entrenadores";
 
 const Navegacion = () => {
   return (
@@ -13,6 +14,7 @@ const Navegacion = () => {
         <Route path="/Clases" element={<PaginaClases/>} />
         <Route path="/Suscripciones" element={<PaginaSubscripciones/>} />
         <Route path="/ServicioAlCliente" element={<ServicioAlCliente/>} />
+        <Route path="/Entrenadores" element={<Entrenadores/>} />
       </Routes>
     </Router>
   );
