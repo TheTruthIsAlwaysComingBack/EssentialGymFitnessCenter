@@ -8,12 +8,13 @@ const CancelarClases = ({ onClose, onCancel }) => {
   const [mensaje, setMensaje] = useState('');
 
   const handleGuardarMensaje = () => {
+    const data = mensaje ? { motivoCancelacion: mensaje } : {};
     fetch("https://661037cf0640280f219c98d3.mockapi.io/api/gym/Clases", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ motivoCancelacion: mensaje }),
+      body: JSON.stringify(data),
     })
       .then(response => response.json())
       .then(() => {

@@ -26,16 +26,25 @@ const PaginaSubscripciones = () => {
   };
 
   const handleCancel = (claseId) => {
-    setClases(prevClases => prevClases.filter(clase => clase.id !== claseId));
+    setClases((prevClases) => prevClases.filter((clase) => clase.id !== claseId));
+    setSelectedClase(null); // Asegúrate de cerrar el modal
   };
 
   return (
     <div className="PaginaSubscripciones">
       <CabezalPagSubscripciones />
       <h2 className="SubtituloPaginaSubscripciones">🚩 Clases pendientes</h2>
-      <ListaClaPendiantePagSubs clases={clases} onClaseClick={handleClaseClick} />
+      <ListaClaPendiantePagSubs
+        clases={clases}
+        onClaseClick={handleClaseClick}
+      />
       {selectedClase && (
-        <ModalInfoClaseSuscrita isOpen={Boolean(selectedClase)} onClose={closeModal} classData={selectedClase} />
+        <ModalInfoClaseSuscrita
+          isOpen={Boolean(selectedClase)}
+          onClose={closeModal}
+          classData={selectedClase}
+          onCancel={handleCancel} // Pasar la función handleCancel aquí
+        />
       )}
     </div>
   );

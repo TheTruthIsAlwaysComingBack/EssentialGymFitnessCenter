@@ -2,25 +2,11 @@ import React, { useEffect, useState } from "react";
 import DateInfoTarClaseSeleccionada from "./DateInfoTarClaseSeleccionada";
 import ConfirmacionClases from "../../components/ConfirmacionClases/ConfirmacionClases";
 import CancelarClases from "../CancelacionClases/CancelarClases";
-import { useNavigate } from "react-router-dom";
 import "./TarjetaClaseSeleccionada.css";
 
-const TarjetaClaseSeleccionada = () => {
-  const [tiempoSeleccionado, setTiempoSeleccionado] = useState("");
-  const [classData, setClassData] = useState(null);
+const TarjetaClaseSeleccionada = ({ classData, onCancel }) => {
   const [confirmacionOpen, setConfirmacionOpen] = useState(false);
   const [cancelacionOpen, setCancelacionOpen] = useState(false);
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    // Realizamos un GET para obtener el tiempo seleccionado
-    fetch("https://661037cf0640280f219c98d3.mockapi.io/api/gym/Clases/9")
-      .then((response) => response.json())
-      .then((data) => {
-        setTiempoSeleccionado(data.tiempoSeleccionado);
-        setClassData(data);
-      });
-  }, []);
 
   const closeConfirmacion = () => {
     setConfirmacionOpen(false);
@@ -64,7 +50,7 @@ const TarjetaClaseSeleccionada = () => {
       <DateInfoTarClaseSeleccionada
         key={classData.id}
         day={classData.Day}
-        date={tiempoSeleccionado}
+        date={classData.tiempoSeleccionado}
         slots={`${classData.id} cupos disponibles de ${classData.Cupos}`}
       />
       <div className="linea-blanca"></div>

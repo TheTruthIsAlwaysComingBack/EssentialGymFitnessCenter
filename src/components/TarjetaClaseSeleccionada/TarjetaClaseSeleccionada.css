@@ -14,25 +14,33 @@
   margin-bottom: 20px;
 }
 
-.BotonConfirmarAsistencia,
+.BotonConfirmarAsistencia {
+  background-color: #d8a7b1;
+  color: #2b2024;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: 5%;
+}
+
 .BotonCancelarAsistencia {
   background-color: #fd0054;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 30px;
   font-size: 16px;
   margin-top: 20px;
-}
-
-.BotonCancelarAsistencia {
-  background-color: #ff4d4d;
 }
 
 .botones-asistencia {
   display: flex;
   justify-content: space-between;
+  margin-top: 0%;
 }
 
 .linea-blanca {
