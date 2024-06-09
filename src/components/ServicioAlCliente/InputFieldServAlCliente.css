@@ -1,0 +1,17 @@
+.ContenedorInputFieldServAlCliente {
+  margin-bottom: 15px;
+}
+
+.LabelInputFieldServAlCliente {
+  display: block;
+  margin-bottom: 5px;
+  color: #2b2024;
+}
+
+.InputFieldServAlCliente {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

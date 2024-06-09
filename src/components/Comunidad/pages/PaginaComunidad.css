@@ -1,0 +1,28 @@
+.pagina-comunidad {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #e91e63;
+  color: #fff;
+  width: 430px;
+  height: 932px;
+}
+
+.encabezado-pagina {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.lista-mensajes {
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.campo-entrada {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
