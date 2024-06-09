@@ -2,7 +2,7 @@ import React from "react";
 import CoachesPage from "../ContenidoBotonInfo/TarjetaEntrenadores/CoachesPage";
 import TarjetaDesClase from "../ContenidoBotonInfo/TarjetaDescripciónClase/TarjetaDesClase";
 import TarjetaClaseSeleccionada from "../TarjetaClaseSeleccionada/TarjetaClaseSeleccionada";
-import "./ModalInfoClaseSuscrita.css";
+/* import "./ModalInfoClaseSuscrita.css"; */
 
 const ModalInfoClaseSuscrita = ({ isOpen, onClose, classData, onCancel }) => {
   if (!isOpen) return null;
