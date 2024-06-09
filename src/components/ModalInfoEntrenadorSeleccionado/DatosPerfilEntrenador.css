@@ -1,0 +1,26 @@
+.DatosPerfilEntrenador {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.info {
+  margin-left: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.PesoEntrenador,
+.AlturaEntrenador,
+.EdadEntrenador {
+  flex: 1;
+  text-align: center;
+  background: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
