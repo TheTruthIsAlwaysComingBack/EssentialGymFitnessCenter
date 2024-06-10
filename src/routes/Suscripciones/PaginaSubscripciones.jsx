@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import ListaClaPendiantePagSubs from "./ListaClaPendiantePagSubs";
-import CabezalPagSubscripciones from "./CabezalPagSubscripciones";
-import ModalInfoClaseSuscrita from "./ModalInfoClaseSuscrita";
+import ListaClaPendiantePagSubs from "../../components/PaginaSuscripciones/ListaClaPendiantePagSubs";
+import CabezalPagSubscripciones from "../../components/PaginaSuscripciones/CabezalPagSubscripciones";
+import ModalInfoClaseSuscrita from "../../components/PaginaSuscripciones/ModalInfoClaseSuscrita";
 import "./PaginaSubscripciones.css";
 
 const PaginaSubscripciones = () => {

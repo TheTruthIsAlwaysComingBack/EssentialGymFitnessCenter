@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "../login/Logueo";
-import PaginaClases from "../../components/InicioClases/Plantilla/PaginaClases";
-import PaginaSubscripciones from "../../components/PaginaSuscripciones/PaginaSubscripciones";
+import PaginaClases from "../Clases/PaginaClases";
+import PaginaSubscripciones from "../Suscripciones/PaginaSubscripciones";
 import ServicioAlCliente from "../ServicioAlCliente/ServicioAlCliente";
 import Entrenadores from "../Entrenadores/Entrenadores";
 import Comunidad from "../Comunidad/Comunidad";

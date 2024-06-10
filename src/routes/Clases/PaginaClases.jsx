@@ -1,8 +1,8 @@
 // PaginaClases.jsx
 import React from "react";
-import SemanaClases from "../organisms/SemanaClases";
-import BarraNav from "../organisms/BarraNav";
-import Cabezal from "../molecules/Cabezal";
+import SemanaClases from "../../components/InicioClases/organisms/SemanaClases";
+import BarraNav from "../../components/InicioClases/organisms/BarraNav";
+import Cabezal from "../../components/InicioClases/molecules/Cabezal";
 import "./PaginaClases.css";
 
 const PaginaClases = () => (
