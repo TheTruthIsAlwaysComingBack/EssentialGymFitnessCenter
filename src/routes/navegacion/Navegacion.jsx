@@ -5,6 +5,7 @@ import PaginaClases from "../../components/InicioClases/Plantilla/PaginaClases";
 import PaginaSubscripciones from "../../components/PaginaSuscripciones/PaginaSubscripciones";
 import ServicioAlCliente from "../ServicioAlCliente/ServicioAlCliente";
 import Entrenadores from "../Entrenadores/Entrenadores";
+import Comunidad from "../Comunidad/Comunidad";
 
 const Navegacion = () => {
   return (
@@ -15,6 +16,7 @@ const Navegacion = () => {
         <Route path="/Suscripciones" element={<PaginaSubscripciones/>} />
         <Route path="/ServicioAlCliente" element={<ServicioAlCliente/>} />
         <Route path="/Entrenadores" element={<Entrenadores/>} />
+        <Route path="/Comunidad" element={<Comunidad/>} />
       </Routes>
     </Router>
   );

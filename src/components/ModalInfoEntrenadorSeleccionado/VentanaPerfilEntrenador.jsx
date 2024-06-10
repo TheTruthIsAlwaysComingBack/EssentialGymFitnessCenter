@@ -18,13 +18,13 @@ const VentanaPerfilEntrenador = ({ entrenador, onClose }) => {
 
   return (
     <div className="VentanaPerfilEntrenador">
-      <div className="CabezalPerfilEntrenador">
-        <button className="FlechaVolverAtras" onClick={onClose}>
-          ←
-        </button>
-        <h2>{entrenador.nameTrainer}</h2>
-      </div>
       <div className="ContenidoPerfilEntrenador">
+        <div className="CabezalPerfilEntrenador">
+          <button className="FlechaVolverAtras" onClick={onClose}>
+            ←
+          </button>
+          <h2>{entrenador.nameTrainer}</h2>
+        </div>
         <DatosPerfilEntrenador entrenador={entrenador} />
         <DisponibilidadEntrenador entrenador={entrenador} />
         <CalificacionEntrenador onRate={handleRate} />
