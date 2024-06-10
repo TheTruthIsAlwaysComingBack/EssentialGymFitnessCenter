@@ -1,5 +1,5 @@
 import React from "react";
-import FormularioLogin from "../../components/fomularioLogin/organisms/Login";
+import Login from "../../components/fomularioLogin/Login";
 import "./Logueo.css";
 
 const Logueo = () => {
@@ -10,7 +10,7 @@ const Logueo = () => {
 
   return (
     <div className="container-logueo">
-      <FormularioLogin onSubmit={handleLogin} />
+      <Login onSubmit={handleLogin} />
     </div>
   );
 };

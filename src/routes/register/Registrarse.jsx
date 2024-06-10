@@ -1,5 +1,6 @@
 import React from "react";
-import Register from "../../components/formularioRegister/organisms/Register";
+import Register from "../../components/formularioRegister/Register";
+import "./Registrarse.css";
 
 const Registrarse = () => {
   const handleLogin = (data) => {
@@ -8,7 +9,7 @@ const Registrarse = () => {
   };
 
   return (
-    <div className="">
+    <div className="container-register">
       <Register onSubmit={handleLogin} />
     </div>
   );

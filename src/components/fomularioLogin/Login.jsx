@@ -1,8 +1,9 @@
 import React from "react";
-import LoginForm from "../molecules/LoginForm";
-import GoogleButton from "../atoms/GoogleButton";
-import Image from "../atoms/Image";
+import LoginForm from "./LoginForm";
+import GoogleButton from "./GoogleButton";
+import Image from "./Image";
 import "./Login.css";
+import { NavLink } from "react-router-dom";
 
 const Login = ({ onSubmit }) => {
   return (
@@ -10,7 +11,11 @@ const Login = ({ onSubmit }) => {
       <div className="login-initial-menssage">
         <Image />
         <h1>BIENVENIDO!</h1>
-        <p>Usa tus credenciales e inicia sesión en tu cuenta</p>
+        <p>
+          Usa tus credenciales e inicia sesión
+          <br />
+          en tu cuenta
+        </p>
       </div>
       <div className="login-google-button">
         <LoginForm onSubmit={onSubmit} />
@@ -22,7 +27,7 @@ const Login = ({ onSubmit }) => {
         />
       </div>
       <p>
-        Aún no tienes una cuenta? <a href="/register">Regístrate</a>
+        Aún no tienes una cuenta? <NavLink to="/register">Regístrate</NavLink>
       </p>
     </div>
   );

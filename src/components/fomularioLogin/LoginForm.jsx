@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Input from "../atoms/Input";
-import Button from "../atoms/Button";
+import Input from "./Input";
+import Button from "./Button";
 import "./LoginForm.css";
 
 const LoginForm = ({ onSubmit }) => {

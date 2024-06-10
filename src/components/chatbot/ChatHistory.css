@@ -1,0 +1,12 @@
+.chat-messages {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.typing {
+  color: #999;
+  font-style: italic;
+}

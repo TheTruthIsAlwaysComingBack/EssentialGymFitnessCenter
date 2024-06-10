@@ -1,0 +1,71 @@
+/* Chat.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--cafe);
+  color: #fff;
+  padding: 20px 15px;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.chat-header p {
+  margin: 0;
+}
+
+.chat-header .chat-header__span {
+  color: var(--rosa);
+}
+
+.chat-form {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid var(--bg);
+  gap: 10px;
+}
+
+.error {
+  color: red;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 30px;
+  right: -15px;
+  background-color: var(--bg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.menu button {
+  padding: 5px 10px;
+  width: 100%;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  text-align: left;
+  width: 16.5rem;
+}
+
+.menu button:hover {
+  background-color: #f0f0f0;
+}
