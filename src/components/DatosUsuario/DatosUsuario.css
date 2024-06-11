@@ -1,0 +1,42 @@
+.info-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--cafe);
+}
+
+.info-principal .icono-usuario {
+  height: 12rem;
+  width: 15rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+  margin-right: 0;
+}
+
+.info-principal .icono-usuario img {
+  border-radius: 50%;
+}
+
+.info-principal .descripcion-estado {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.info-principal .descripcion-estado p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.info-principal .name {
+  font-size: 3.5rem;
+}
+
+.info-principal .descripcion-estado .edad {
+  padding: 0 0.5rem;
+  border-left: 1px solid var(--cafe);
+  border-right: 1px solid var(--cafe);
+}

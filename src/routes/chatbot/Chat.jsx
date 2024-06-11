@@ -72,8 +72,6 @@ function Chat() {
           Respuesta:
         `;
 
-    console.log(instruction);
-
     let attempts = 0;
     let messageSent = false;
     setError("");
