@@ -1,0 +1,5 @@
+.lista-mensajes {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}

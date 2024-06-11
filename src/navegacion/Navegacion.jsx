@@ -4,6 +4,10 @@ import PaginaClases from "../components/InicioClases/Plantilla/PaginaClases";
 import Registrarse from "../routes/register/Registrarse";
 import Logueo from "../routes/login/Logueo";
 import Chat from "../routes/chatbot/Chat";
+import PaginaSubscripciones from "../routes/Suscripciones/PaginaSubscripciones";
+import ServicioAlCliente from "../routes/ServicioAlCliente/ServicioAlCliente";
+import Entrenadores from "../routes/Entrenadores/Entrenadores";
+import Comunidad from "../routes/Comunidad/Comunidad";
 
 const Navegacion = () => {
   return (
@@ -13,6 +17,10 @@ const Navegacion = () => {
         <Route path="/clases" element={<PaginaClases />} />
         <Route path="/register" element={<Registrarse />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/suscripciones" element={<PaginaSubscripciones />} />
+        <Route path="/servicioalcliente" element={<ServicioAlCliente />} />
+        <Route path="/entrenadores" element={<Entrenadores />} />
+        <Route path="/comunidad" element={<Comunidad />} />
       </Routes>
     </Router>
   );

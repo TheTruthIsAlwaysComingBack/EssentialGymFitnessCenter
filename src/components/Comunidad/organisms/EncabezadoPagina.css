@@ -1,0 +1,17 @@
+.encabezado-pagina {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  height: 110px;
+}
+
+.encabezado-pagina h3 {
+  font-size: 1.05em;
+  margin: 0%;
+  margin-top: 1.5%;
+}
+
+.encabezado-pagina h5 {
+  margin: 5%;
+  font-size: 0.80em;
+}

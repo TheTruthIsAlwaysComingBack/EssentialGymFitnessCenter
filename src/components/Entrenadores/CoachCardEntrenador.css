@@ -1,0 +1,33 @@
+.CoachCardEntrenador {
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  width: 326px;
+  height: 236px;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  overflow: hidden;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.CoachInfoEntrenador {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  width: 100%;
+}
+
+.CoachInfoEntrenador h3 {
+  margin: 0;
+  font-size: 1.33em;
+}
+
+.CoachInfoEntrenador h5 {
+  margin: 0;
+  font-size: 0.98em;
+  color: #e91e63;
+}

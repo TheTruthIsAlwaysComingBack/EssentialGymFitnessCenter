@@ -1,0 +1,19 @@
+.DateInfoTarClaseSeleccionada {
+  background-color: #d8a7b1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.TituloDateInfoTarClaseSeleccionada {
+  font-size: 18px;
+  color: #2b2024;
+  margin: 10px 0 5px;
+}
+
+.DateInfoTarClaseSeleccionada p {
+  font-size: 16px;
+  color: #2b2024;
+  margin: 5px 0;
+}
