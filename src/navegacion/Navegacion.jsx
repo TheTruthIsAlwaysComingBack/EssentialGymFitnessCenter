@@ -8,6 +8,7 @@ import PaginaSubscripciones from "../routes/Suscripciones/PaginaSubscripciones";
 import ServicioAlCliente from "../routes/ServicioAlCliente/ServicioAlCliente";
 import Entrenadores from "../routes/Entrenadores/Entrenadores";
 import Comunidad from "../routes/Comunidad/Comunidad";
+import Principal from "../routes/Principal/Home"
 
 const Navegacion = () => {
   return (
@@ -16,6 +17,7 @@ const Navegacion = () => {
         <Route path="/" element={<Logueo />} />
         <Route path="/clases" element={<PaginaClases />} />
         <Route path="/register" element={<Registrarse />} />
+        <Route path="/principal" element={<Principal/>}/>
         <Route path="/chat" element={<Chat />} />
         <Route path="/suscripciones" element={<PaginaSubscripciones />} />
         <Route path="/servicioalcliente" element={<ServicioAlCliente />} />
