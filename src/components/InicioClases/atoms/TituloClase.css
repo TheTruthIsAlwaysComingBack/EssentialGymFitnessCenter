@@ -1,5 +1,6 @@
 .titulo-clase {
-  color: #e91e63;
+  color: var(--rosa);
   font-size: 18px;
   margin-bottom: 10px;
+  margin: 0;
 }

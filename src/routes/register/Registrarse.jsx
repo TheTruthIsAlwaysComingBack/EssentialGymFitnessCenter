@@ -3,14 +3,14 @@ import Register from "../../components/formularioRegister/Register";
 import "./Registrarse.css";
 
 const Registrarse = () => {
-  const handleLogin = (data) => {
-    console.log("Login data:", data);
-    // Aquí iría la lógica para manejar el login, por ejemplo, una llamada a una API
+  const handleRegister = (data) => {
+    console.log("Register data:", data);
+    // Aquí iría la lógica para manejar el registro, por ejemplo, una llamada a una API
   };
 
   return (
     <div className="container-register">
-      <Register onSubmit={handleLogin} />
+      <Register onSubmit={handleRegister} />
     </div>
   );
 };

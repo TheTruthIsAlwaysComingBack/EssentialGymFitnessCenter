@@ -1,13 +1,13 @@
 import React from "react";
-import "./InformacionUsuario.css";
 import Membresia from "./Membresia";
 import DatosUsuario from "./DatosUsuario";
+import "./InformacionUsuario.css";
 
-const InformacionUsuario = () => {
+const InformacionUsuario = ({ user }) => {
   return (
     <div className="contenido-usuario">
-      <DatosUsuario />
-      <Membresia />
+      <DatosUsuario user={user} />
+      <Membresia membership={user.membresia} />
     </div>
   );
 };

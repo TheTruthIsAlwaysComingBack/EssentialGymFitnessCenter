@@ -1,41 +1,20 @@
-import { useState, useEffect } from "react";
 import React from "react";
 import "./DatosUsuario.css";
 
-const DatosUsuario = () => {
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    const fetchUser = async () => {
-      const data = [
-        {
-          name: "Juan Vidal",
-          state: "Activo",
-          age: "23 Años",
-          gender: "Hombre",
-          image:
-            "https://ipfs.io/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/766.jpg",
-        },
-      ];
-      setUser(data[0]);
-    };
-
-    fetchUser();
-  }, []);
-
+const DatosUsuario = ({ user }) => {
   if (!user) return <div>Loading...</div>;
 
   return (
     <div className="info-principal">
       <div className="icono-usuario">
-        <img src={user.image} alt={user.age} />
+        <img src={user.foto} alt={user.nombre} />
       </div>
       <div className="caracteristicas">
-        <p className="name no-margin">{user.name}</p>
+        <p className="name no-margin">{user.nombre}</p>
         <div className="descripcion-estado">
-          <p className="estado no-margin">{user.state}</p>
-          <p className="edad no-margin">{user.age}</p>
-          <p className="sexo no-margin">{user.gender}</p>
+          <p className="estado no-margin">{user.rol}</p>
+          <p className="edad no-margin">{user.fechaNacimiento}</p>
+          <p className="sexo no-margin">{user.sexo}</p>
         </div>
       </div>
     </div>

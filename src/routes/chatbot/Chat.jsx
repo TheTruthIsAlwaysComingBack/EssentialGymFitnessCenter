@@ -14,20 +14,14 @@ function Chat() {
   const [error, setError] = useState("");
   const [chat, setChat] = useState(null);
   const [isTyping, setIsTyping] = useState(false);
-  const [randomImage, setRandomImage] = useState("");
   const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const fetchRandomImage = async () => {
-      try {
-        const response = await fetch("https://picsum.photos/200");
-        setRandomImage(response.url);
-      } catch (error) {
-        console.error("Error fetching random image", error);
-      }
-    };
-
-    fetchRandomImage();
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
   }, []);
 
   useEffect(() => {
@@ -51,7 +45,7 @@ function Chat() {
     const newMessage = {
       role: "user",
       text: input,
-      image: randomImage,
+      image: user.foto,
     };
 
     setMessages((prevMessages) => {

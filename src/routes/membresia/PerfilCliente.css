@@ -1,8 +1,12 @@
+.perfil-container-general {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .perfil-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  height: 100vh;
-  overflow: hidden;
-  padding: 2rem;
+  overflow: scroll;
+  padding: 1rem 2rem;
 }

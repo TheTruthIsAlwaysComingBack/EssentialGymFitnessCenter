@@ -1,4 +1,9 @@
 .semana-clases {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
   overflow-y: auto;
-  background-color: aliceblue;
+  background-color: var(--cafe);
+  padding: 1rem 2rem;
 }
