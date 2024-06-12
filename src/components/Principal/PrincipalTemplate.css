@@ -1,9 +1,7 @@
-.cabeza-container {
+.princi-container {
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 10px;
-  }
+    flex-direction: column;
+}
 
 .trainer-container {
     display: flex;
@@ -13,33 +11,5 @@
 
 .ver-mas-container {
     margin-left: auto;
-}
-
-.texto-container {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    color: var(--rosa);
-}
-  
-.botones-container {
-    display: flex;
-    align-items: center; 
-    gap: 10px; 
-}
-  
-.cabeza-container h2 {
-    margin: 0;
-}
-  
-.cabeza-container p {
-    margin: 0;
-}
-  
-@media (max-width: 768px) {
-    .cabeza-container {
-      align-items: flex-start;
-      align-items: center;
-    }
 }
   
