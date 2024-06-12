@@ -1,0 +1,22 @@
+.DetallesComida {
+  padding: 20px;
+}
+
+.DetallesComida h2 {
+  color: #fd0054;
+  margin-bottom: 10px;
+}
+
+.DetallesComidaInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.DetallesComidaImagen {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
