@@ -9,6 +9,7 @@ import ServicioAlCliente from "../routes/ServicioAlCliente/ServicioAlCliente";
 import Entrenadores from "../routes/Entrenadores/Entrenadores";
 import Comunidad from "../routes/Comunidad/Comunidad";
 import PerfilCliente from "../routes/membresia/PerfilCliente";
+import Recursos from "../components/PaginaRecursos/RecursosTemplate";
 
 const Navegacion = () => {
   return (
@@ -22,7 +23,8 @@ const Navegacion = () => {
         <Route path="/servicioalcliente" element={<ServicioAlCliente />} />
         <Route path="/entrenadores" element={<Entrenadores />} />
         <Route path="/comunidad" element={<Comunidad />} />
-        <Route path="perfil" element={<PerfilCliente />} />
+        <Route path="/recursos" element={<Recursos />} />
+        <Route path="/perfil" element={<PerfilCliente />} />
       </Routes>
     </Router>
   );

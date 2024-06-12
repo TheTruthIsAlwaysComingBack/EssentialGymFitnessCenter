@@ -1,0 +1,34 @@
+.TarjetaComida {
+  background-color: #d8a7b1;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+  cursor: pointer;
+  position: relative;
+  background-size: cover;
+  background-position: center; 
+}
+
+.TarjetaComidaImagen {
+  width: 100%;
+  height: 200px;
+}
+
+.TarjetaComidaInfo {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.TarjetaComidaInfo h3 {
+  margin: 0;
+  color: #fd0054;
+}
+
+.TarjetaComidaInfo p {
+  margin: 5px 0 0;
+  color: #ffffff;
+}
