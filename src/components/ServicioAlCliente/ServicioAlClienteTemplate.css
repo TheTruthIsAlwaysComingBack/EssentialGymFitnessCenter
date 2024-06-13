@@ -1,5 +1,8 @@
 .ServicioAlClienteTemplate {
-  padding: 40px;
   background-color: #2b2024;
   text-align: center;
+}
+
+.container-servicio-cliente {
+  padding: 2rem;
 }

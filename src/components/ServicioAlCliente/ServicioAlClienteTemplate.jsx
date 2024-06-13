@@ -1,12 +1,14 @@
 import React from "react";
 import "./ServicioAlClienteTemplate.css";
-import HeadingServAlCliente from "./HeadingServAlCliente";
+import Header from "../header/Header";
 import ContactFormServAlCliente from "./ContactFormServAlCliente";
 
 const ServicioAlClienteTemplate = () => (
   <div className="ServicioAlClienteTemplate">
-    <HeadingServAlCliente text="Servicio Al Cliente" level={1} />
-    <ContactFormServAlCliente />
+    <Header seccion="Servicio al cliente" />
+    <div className="container-servicio-cliente">
+      <ContactFormServAlCliente />
+    </div>
   </div>
 );
 

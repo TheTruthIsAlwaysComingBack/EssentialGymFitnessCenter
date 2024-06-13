@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ListaClaPendiantePagSubs from "../../components/PaginaSuscripciones/ListaClaPendiantePagSubs";
-import CabezalPagSubscripciones from "../../components/PaginaSuscripciones/CabezalPagSubscripciones";
 import ModalInfoClaseSuscrita from "../../components/PaginaSuscripciones/ModalInfoClaseSuscrita";
 import "./PaginaSubscripciones.css";
+import Header from "../../components/header/Header";
 
 const PaginaSubscripciones = () => {
   const [selectedClase, setSelectedClase] = useState(null);
@@ -12,7 +12,7 @@ const PaginaSubscripciones = () => {
     fetch("https://661037cf0640280f219c98d3.mockapi.io/api/gym/Clases")
       .then((response) => response.json())
       .then((data) => {
-        const suscripciones = data.filter((clase) => clase.tiempoSeleccionado); // Filtramos solo las clases suscritas
+        const suscripciones = data.filter((clase) => clase.tiempoSeleccionado);
         setClases(suscripciones);
       });
   }, []);
@@ -26,13 +26,16 @@ const PaginaSubscripciones = () => {
   };
 
   const handleCancel = (claseId) => {
-    setClases((prevClases) => prevClases.filter((clase) => clase.id !== claseId));
+    setClases((prevClases) =>
+      prevClases.filter((clase) => clase.id !== claseId)
+    );
     setSelectedClase(null); // Asegúrate de cerrar el modal
   };
 
   return (
     <div className="PaginaSubscripciones">
-      <CabezalPagSubscripciones />
+      <Header seccion="Suscripciones" />
+
       <h2 className="SubtituloPaginaSubscripciones">🚩 Clases pendientes</h2>
       <ListaClaPendiantePagSubs
         clases={clases}

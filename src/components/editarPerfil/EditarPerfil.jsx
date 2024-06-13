@@ -133,15 +133,6 @@ const EditarPerfil = ({ user, onUpdate }) => {
           onChange={handleChange}
         />
       </label>
-      <label>
-        Rol:
-        <input
-          type="text"
-          name="rol"
-          value={formData.rol}
-          onChange={handleChange}
-        />
-      </label>
       <button type="submit">Guardar Cambios</button>
     </form>
   );
