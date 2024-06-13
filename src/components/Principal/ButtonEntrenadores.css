@@ -1,41 +1,51 @@
 .entre-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    width: 100px;
-    
-  }
-  
-  .entre-button {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-    padding: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  .entre-button:hover {
-    transform: scale(1.1);
-  }
-  
-  .profile-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    
-  }
-  
-  .entre-name {
-    margin-top: 5px;
-    font-size: 14px;
-    color: var(--blanco);
-    text-align: center;
-    
-  }
-  
+  display: flex;
+  flex-wrap: nowrap; 
+  gap: 10px; 
+  overflow-x: auto; 
+  padding: 10px; 
+  width: 100%; 
+  white-space: nowrap;
+}
+
+.entre-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.historia-instagram {
+  width: 100px; /* Tamaño del contenedor de la historia */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.historia-content {
+  width: 80px; /* Tamaño de la imagen de la historia */
+  height: 80px; /* Tamaño de la imagen de la historia */
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid transparent; /* Borde inicialmente transparente */
+  background: linear-gradient(90deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.historia-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.entre-name {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #ffffff;
+}

@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './CardRutina.css';
-import Rutina1 from '../../assets/Rutina1.png';
 
 const CardRutina = () => {
-  const rutina = "Cycling Challenge";
+  const [rutinas, setRutinas] = useState([]);
+
+  useEffect(() => {
+    fetch("https://6611d8dc95fdb62f24edc940.mockapi.io/api/v2/ejercicios")
+      .then((response) => response.json())
+      .then((data) => setRutinas(data))
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
 
   return (
-    <button className='rutina-container'>
-      <img src={Rutina1} alt="Cycling Challenge" className='rutina-image' />
-      <p className='rutina-text'>{rutina}</p>
-    </button>
+    <div className='rutina-container'>
+      {rutinas.map((rutina) => (
+        <button key={rutina.id} className='rutina-button'>
+          <img src={rutina.imagen} alt={rutina.nombre} className='rutina-image' />
+          <p className='rutina-text'>{rutina.nombre}</p>
+        </button>
+      ))}
+    </div>
   );
 };
 

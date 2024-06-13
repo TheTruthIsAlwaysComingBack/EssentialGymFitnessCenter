@@ -1,32 +1,48 @@
 .rutina-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #1c1c1e; /* Dark background color */
-    border-radius: 10px;
-    padding: 10px;
-    width: 180px; /* Adjust the width as needed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 10px;
-    text-align: center;
-    border: none; /* Remove default button border */
-    cursor: pointer; /* Change cursor to pointer */
-    transition: transform 0.2s; /* Smooth scaling transition */
-  }
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px; /* Espacio entre botones */
+  padding: 10px;
+  width: 100%;
+  justify-content: flex-start;
   
-  .rutina-container:hover {
-    transform: scale(1.05); /* Scale up on hover */
-  }
-  
-  .rutina-image {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .rutina-text {
-    color: white; /* White text color */
-    margin-top: 10px;
-    font-size: 14px; /* Adjust the font size as needed */
-    
-  }
-  
+  white-space: nowrap;
+}
+
+.rutina-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.rutina-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c1c1e;
+  border-radius: 10px;
+  padding: 10px;
+  width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.rutina-button:hover {
+  transform: scale(1.05);
+}
+
+.rutina-image {
+  width: 160px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.rutina-text {
+  color: white;
+  margin-top: 10px;
+  font-size: 14px;
+}
