@@ -1,0 +1,12 @@
+.back-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .back-button svg {
+    width: 24px;
+    height: 24px;
+  }
+  

@@ -13,6 +13,7 @@ import PerfilCliente from "../routes/membresia/PerfilCliente";
 import Principal from "../routes/principal/Principal";
 import CoachDetail from "../components/Principal/CoachDetail";
 import RutinaDetalles from "../components/Principal/RutinaDetalles";
+import RutinasDeAngel from "../routes/RutinasDeAngel/RutinasDeAngel";
 
 const Navegacion = () => {
   return (

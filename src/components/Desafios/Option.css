@@ -1,0 +1,13 @@
+.option {
+    background-color: var(--gris);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+  }
+  .option.active {
+    background-color: var(--principalRosa);
+  }
+  

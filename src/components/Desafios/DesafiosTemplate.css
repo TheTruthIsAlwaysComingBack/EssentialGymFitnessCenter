@@ -1,0 +1,8 @@
+.container {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
