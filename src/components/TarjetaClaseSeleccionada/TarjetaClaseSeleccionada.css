@@ -1,0 +1,50 @@
+.TarjetaClaseSeleccionada {
+  padding: 20px;
+  background-color: #2b2024;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.TituloTarjetaClaseSeleccionada {
+  font-size: 24px;
+  color: #fd0054;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.BotonConfirmarAsistencia {
+  background-color: #d8a7b1;
+  color: #2b2024;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: 5%;
+}
+
+.BotonCancelarAsistencia {
+  background-color: #fd0054;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.botones-asistencia {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0%;
+}
+
+.linea-blanca {
+  height: 1px;
+  background-color: #fff;
+  margin: 20px 0;
+}

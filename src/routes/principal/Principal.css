@@ -1,0 +1,12 @@
+.principal-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.principal-scroll {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: scroll;
+}

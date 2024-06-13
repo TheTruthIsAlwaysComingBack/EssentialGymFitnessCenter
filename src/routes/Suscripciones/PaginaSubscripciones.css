@@ -1,0 +1,15 @@
+.PaginaSubscripciones {
+  background-color: #2b2024;
+  color: white;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.SubtituloPaginaSubscripciones {
+  margin-top: 35px;
+  margin-left: 3%;
+  display: flex;
+  justify-content: flex-start;
+  color: #ffffff;
+  font-size: 4.34em;
+}

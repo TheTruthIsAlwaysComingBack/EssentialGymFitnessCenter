@@ -1,0 +1,52 @@
+.editar-perfil-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.editar-perfil-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.editar-perfil-form input,
+.editar-perfil-form select {
+  padding: 8px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.editar-perfil-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.editar-perfil-form button:hover {
+  background-color: #45a049;
+}
+
+.image-preview {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+.editar-perfil-form .image-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editar-perfil-form .image-upload p {
+  margin-top: 10px;
+}

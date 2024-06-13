@@ -1,0 +1,57 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.CabezalModalInfoClase {
+  margin: 10px 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #ffff;
+}
+
+.info-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linea-blanca {
+  height: 1px;
+  background-color: white;
+  margin: 10px 0;
+}
+
+.TituloModalInfoClase {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  color: #ffff;
+  font-size: 18px;
+}

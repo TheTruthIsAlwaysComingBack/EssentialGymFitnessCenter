@@ -1,0 +1,26 @@
+.TarjetaClaseASus {
+  padding: 20px;
+  background-color: #2b2024;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.TarjetaClaseASus .TituloTarjetaClaseASus {
+  font-size: 24px;
+  color: #fd0054;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.BotonSuscribirse {
+  background-color: #fd0054;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}

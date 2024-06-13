@@ -1,0 +1,14 @@
+.cabezal.nivel-1 {
+  color: #fff;
+  font-size: 40px;
+  font-size: 1.90em;
+  display: flex;
+  justify-content: center;
+}
+
+.cabezal.nivel-3 {
+  color: #ffffff;
+  font-size: 0.90em;
+  display: flex;
+  justify-content: center;
+}

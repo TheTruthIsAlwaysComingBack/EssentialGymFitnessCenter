@@ -1,0 +1,13 @@
+.OpinionesEntrenador {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.Opinion {
+  background: #fd0054;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}

@@ -1,5 +1,5 @@
 import "./App.css";
-import Navegacion from "./routes/navegacion/Navegacion";
+import Navegacion from "./navegacion/Navegacion";
 
 function App() {
   return (

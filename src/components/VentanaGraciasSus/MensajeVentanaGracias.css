@@ -1,0 +1,13 @@
+.MensajeVentanaGracias {
+  text-align: center;
+}
+
+.MensajeVentanaGracias h1 {
+  color: #e91e63;
+  margin: 10px 0;
+}
+
+.MensajeVentanaGracias p {
+  color: #2b2024;
+  margin: 10px 0;
+}

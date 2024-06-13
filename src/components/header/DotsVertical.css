@@ -1,0 +1,39 @@
+.dots-vertical-general {
+  position: relative;
+}
+
+.dropdown-menu-general {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+}
+
+.dropdown-menu-general a,
+.dropdown-menu-general button {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+}
+
+.dropdown-menu-general a:hover,
+.dropdown-menu-general button:hover {
+  background-color: #f1f1f1;
+}
+
+.submenu-general {
+  padding-left: 15px;
+}
+
+.submenu-general a {
+  padding-left: 10px;
+}

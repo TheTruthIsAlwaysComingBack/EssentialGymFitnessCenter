@@ -1,0 +1,13 @@
+.RecursosTemplate {
+  background-color: #2b2024;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.recursos-container-template {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 100%;
+  padding-bottom: 5rem;
+}

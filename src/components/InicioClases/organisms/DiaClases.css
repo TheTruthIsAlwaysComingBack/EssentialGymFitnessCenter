@@ -1,0 +1,20 @@
+.dia-clases {
+  background-color: var(--cafe);
+  border-radius: 5px;
+}
+
+.titulo-dia {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 24px;
+  color: var(--rosa);
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.clases-contenedor {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}

@@ -1,0 +1,11 @@
+.contenido-usuario {
+  border: 1px solid var(--cafe);
+  padding: 1rem;
+  border-radius: 2rem;
+  color: var(--cafe);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--bg);
+  height: fit-content;
+}

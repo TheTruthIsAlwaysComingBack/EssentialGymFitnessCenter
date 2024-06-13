@@ -1,0 +1,18 @@
+.BotonAceptarGracias {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.BotonAceptarGracias.primary {
+  background-color: #e0e0e0;
+  color: #2b2024;
+}
+
+.BotonAceptarGracias.secondary {
+  background-color: #fd0054;
+  color: #ffffff;
+}

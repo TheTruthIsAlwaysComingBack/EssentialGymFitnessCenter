@@ -1,0 +1,44 @@
+.info-membresia {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.8rem;
+}
+
+.info-membresia .tipo-mem {
+  font-size: 2.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.info-membresia .fecha-mem {
+  display: flex;
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.info-membresia .bg-mem {
+  text-align: center;
+  background-color: var(--cafe);
+  color: var(--bg);
+  padding: 1.5rem 0;
+  border-radius: 2rem;
+}
+
+.info-exp span {
+  color: var(--gris);
+  font-size: 1.2rem;
+}
+
+.info-membresia .fecha-mem .gray {
+  color: var(--gris);
+}
+
+.info-membresia .fecha-mem .adquirido {
+  width: 50%;
+  border-right: 1px solid var(--cafe);
+}
+
+.info-membresia .fecha-mem .activado {
+  width: 50%;
+}

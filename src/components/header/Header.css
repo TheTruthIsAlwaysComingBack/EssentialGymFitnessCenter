@@ -1,0 +1,11 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  background-color: var(--rosa);
+}
+
+.header-container .icon {
+  stroke: var(--bg);
+}
