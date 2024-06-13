@@ -5,7 +5,7 @@ import CoachesPageEntrenadores from "./CoachesPageEntrenadores";
 
 const EntrenadoresTemplate = ({ onSelectCoach }) => (
   <div className="EntrenadoresTemplate">
-    <HeadingEntrenadores text="Entrenadores" level={1} />
+    <HeadingEntrenadores text="bestias" level={1} />
     <CoachesPageEntrenadores onSelectCoach={onSelectCoach} />
   </div>
 );

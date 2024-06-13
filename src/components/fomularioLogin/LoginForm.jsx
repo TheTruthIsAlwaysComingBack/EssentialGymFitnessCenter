@@ -28,8 +28,8 @@ const LoginForm = ({ onSubmit }) => {
         setMessage("Inicio de sesión exitoso");
         setTipoAviso("Exitoso");
         onSubmit(user);
-        localStorage.setItem("user", JSON.stringify(user)); // Guardar usuario en localStorage
-        setTimeout(() => navigate("/perfil"), 2000);
+        localStorage.setItem("user", JSON.stringify(user));
+        setTimeout(() => navigate("/principal"), 2000);
       } else {
         setMessage("Correo electrónico o contraseña incorrectos");
         setTipoAviso("Error");

@@ -9,7 +9,9 @@ import ServicioAlCliente from "../routes/ServicioAlCliente/ServicioAlCliente";
 import Entrenadores from "../routes/Entrenadores/Entrenadores";
 import Comunidad from "../routes/Comunidad/Comunidad";
 import PerfilCliente from "../routes/membresia/PerfilCliente";
-import Recursos from "../components/PaginaRecursos/RecursosTemplate";
+import Principal from "../routes/principal/Principal";
+import CoachDetail from "../components/Principal/CoachDetail";
+import RutinaDetalles from "../components/Principal/RutinaDetalles";
 
 const Navegacion = () => {
   return (
@@ -22,9 +24,11 @@ const Navegacion = () => {
         <Route path="/suscripciones" element={<PaginaSubscripciones />} />
         <Route path="/servicioalcliente" element={<ServicioAlCliente />} />
         <Route path="/entrenadores" element={<Entrenadores />} />
+        <Route path="/entrenador/:id" element={<CoachDetail />} />
         <Route path="/comunidad" element={<Comunidad />} />
-        <Route path="/recursos" element={<Recursos />} />
         <Route path="/perfil" element={<PerfilCliente />} />
+        <Route path="/principal" element={<Principal />} />
+        <Route path="/rutina/:id" element={<RutinaDetalles />} />
       </Routes>
     </Router>
   );

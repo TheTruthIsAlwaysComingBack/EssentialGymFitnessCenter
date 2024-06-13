@@ -1,0 +1,33 @@
+.rutinas {
+  padding: 20px;
+}
+
+.rutinas-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+}
+
+.rutina-item {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+.imagen-rutina {
+  width: 25rem;
+  height: 15rem;
+}
+
+.imagen-rutina img {
+  width: 25rem;
+  height: 15rem;
+  border-radius: 10px;
+}
+
+.rutina-item p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  width: 100%;
+  text-align: center;
+}

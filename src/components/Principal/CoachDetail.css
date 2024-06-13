@@ -1,0 +1,108 @@
+.container-info-eachEntrenador-general {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--cafe);
+  color: var(--bg);
+}
+
+.container-info-eachEntrenador {
+  text-align: center;
+  padding: 2rem;
+  overflow: scroll;
+}
+
+.entrenador-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.entrenador-name {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.entrenador-email {
+  color: var(--rosa);
+  margin-bottom: 20px;
+}
+
+.entrenador-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entrenador-stats {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  margin-bottom: 20px;
+}
+
+.entrenador-stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+  color: var(--rosa);
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  width: 9rem;
+  height: 8rem;
+}
+
+.entrenador-stat span {
+  color: var(--bg);
+}
+
+.entrenador-classes,
+.entrenador-horarios,
+.entrenador-dias {
+  margin-bottom: 12px;
+}
+
+.container-info-eachEntrenador-general h3 {
+  color: var(--rosa);
+  font-weight: normal;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.container-info-eachEntrenador-general p {
+  background-color: var(--bg);
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.info-general-coach {
+  display: flex;
+  overflow-x: hidden;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.info-general-coach .particion {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.info-general-coach .particion .entrenador-email {
+  background-color: var(--bg);
+  color: #000;
+}
+
+.info-cat-entrenador {
+  display: grid;
+  width: 100%;
+}

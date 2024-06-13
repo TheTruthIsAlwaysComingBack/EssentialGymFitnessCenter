@@ -1,0 +1,66 @@
+.entrenadores {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.nav-entrenadores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.6rem;
+}
+
+.nav-entrenadores h2 {
+  margin: 0;
+  font-weight: normal;
+  color: var(--rosa);
+}
+
+.nav-entrenadores a {
+  text-decoration: none;
+  color: var(--bg);
+}
+
+.entrenadores-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.entrenador-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  color: var(--bg);
+  text-decoration: none;
+}
+
+.entrenador-item .imagen-coaches {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+
+.entrenador-item .imagen-coaches img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.entrenador-item p {
+  margin: 0;
+}

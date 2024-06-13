@@ -1,5 +1,6 @@
 .CoachesPageEntrenadores {
   background-color: #2b2024;
-  height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
