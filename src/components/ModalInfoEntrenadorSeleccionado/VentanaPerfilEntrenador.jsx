@@ -25,10 +25,12 @@ const VentanaPerfilEntrenador = ({ entrenador, onClose }) => {
           </button>
           <h2>{entrenador.nameTrainer}</h2>
         </div>
-        <DatosPerfilEntrenador entrenador={entrenador} />
-        <DisponibilidadEntrenador entrenador={entrenador} />
-        <CalificacionEntrenador onRate={handleRate} />
-        <OpinionesEntrenador opiniones={[]} onAddOpinion={handleAddOpinion} />
+        <div className="VentanaEntrenadorPerfil">
+          <DatosPerfilEntrenador entrenador={entrenador} />
+          <DisponibilidadEntrenador entrenador={entrenador} />
+          <CalificacionEntrenador onRate={handleRate} />
+          <OpinionesEntrenador opiniones={[]} onAddOpinion={handleAddOpinion} />
+        </div>
       </div>
     </div>
   );

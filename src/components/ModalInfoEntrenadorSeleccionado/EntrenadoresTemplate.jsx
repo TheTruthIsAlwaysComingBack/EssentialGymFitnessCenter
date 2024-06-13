@@ -20,7 +20,7 @@ const EntrenadoresTemplate = ({ onSelectCoach }) => {
 
   return (
     <div className="EntrenadoresTemplate">
-      <HeadingEntrenadores text="Entrenadores" level={1} />
+      <HeadingEntrenadores text="" level={1} />
       <CoachesPageEntrenadores onSelectCoach={handleSelectCoach} />
       {selectedCoach && (
         <VentanaPerfilEntrenador

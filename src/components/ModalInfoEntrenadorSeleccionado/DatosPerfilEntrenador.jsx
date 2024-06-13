@@ -5,33 +5,35 @@ import "./DatosPerfilEntrenador.css";
 
 const DatosPerfilEntrenador = ({ entrenador }) => (
   <div className="DatosPerfilEntrenador">
-    <ImagenPerfilEntrenador
-      src={entrenador.image}
-      alt={entrenador.nameTrainer}
-    />
-    <div className="info">
-      <TextoEntrenador
-        text={entrenador.nameTrainer}
-        className="NombreEntrenador"
+    <div className="DatosPerfilEntrenador-gui">
+      <ImagenPerfilEntrenador
+        src={entrenador.image}
+        alt={entrenador.nameTrainer}
       />
-      <TextoEntrenador
-        text={entrenador.CorreoEntrenador}
-        className="CorreoEntrenador"
-      />
-      <div className="stats">
+      <div className="info">
         <TextoEntrenador
-          text={`${entrenador.Peso} Kg`}
-          className="PesoEntrenador"
+          text={entrenador.nameTrainer}
+          className="NombreEntrenador"
         />
         <TextoEntrenador
-          text={`${entrenador.Altura} m`}
-          className="AlturaEntrenador"
-        />
-        <TextoEntrenador
-          text={`${entrenador.Edad} años`}
-          className="EdadEntrenador"
+          text={entrenador.CorreoEntrenador}
+          className="CorreoEntrenador"
         />
       </div>
+    </div>
+    <div className="stats">
+      <TextoEntrenador
+        text={`${entrenador.Peso} Kg`}
+        className="PesoEntrenador"
+      />
+      <TextoEntrenador
+        text={`${entrenador.Altura} m`}
+        className="AlturaEntrenador"
+      />
+      <TextoEntrenador
+        text={`${entrenador.Edad} años`}
+        className="EdadEntrenador"
+      />
     </div>
   </div>
 );

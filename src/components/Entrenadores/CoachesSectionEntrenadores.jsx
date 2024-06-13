@@ -5,9 +5,6 @@ import "./CoachesSectionEntrenadores.css";
 const CoachesSectionEntrenadores = ({ coaches, onSelectCoach }) => {
   return (
     <div className="CoachesSectionEntrenadores">
-      <h2 className="TituloSeccionEntrenadores">
-        Entrena Con Nuestros Mejores Entrenadores
-      </h2>
       <div className="CoachesContainerEntrenadores">
         {coaches.map((coach) => (
           <CoachCardEntrenador

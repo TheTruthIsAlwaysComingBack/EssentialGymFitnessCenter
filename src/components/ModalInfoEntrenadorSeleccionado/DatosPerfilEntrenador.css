@@ -1,8 +1,12 @@
 .DatosPerfilEntrenador {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 20px;
-  margin-top: 35%;
+  gap: 2rem;
+}
+.DatosPerfilEntrenador-gui {
+  display: flex;
 }
 
 .info {

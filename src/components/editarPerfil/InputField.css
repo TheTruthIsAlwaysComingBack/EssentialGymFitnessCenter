@@ -1,0 +1,11 @@
+.input-field label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.input-field input {
+  padding: 8px;
+  font-size: 14px;
+  margin-top: 5px;
+}

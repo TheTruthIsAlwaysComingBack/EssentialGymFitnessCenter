@@ -1,0 +1,11 @@
+.header-container-coachinfo {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  background-color: var(--rosa);
+  gap: 1rem;
+}
+
+.header-container-coachinfo .icon {
+  stroke: var(--bg);
+}
