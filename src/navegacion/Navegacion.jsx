@@ -8,6 +8,7 @@ import PaginaSubscripciones from "../routes/Suscripciones/PaginaSubscripciones";
 import ServicioAlCliente from "../routes/ServicioAlCliente/ServicioAlCliente";
 import Entrenadores from "../routes/Entrenadores/Entrenadores";
 import Comunidad from "../routes/Comunidad/Comunidad";
+import Recursos from "../routes/Recursos/Recursos";
 import PerfilCliente from "../routes/membresia/PerfilCliente";
 import Principal from "../routes/principal/Principal";
 import CoachDetail from "../components/Principal/CoachDetail";
@@ -26,6 +27,7 @@ const Navegacion = () => {
         <Route path="/entrenadores" element={<Entrenadores />} />
         <Route path="/entrenador/:id" element={<CoachDetail />} />
         <Route path="/comunidad" element={<Comunidad />} />
+        <Route path="/recursos" element={<Recursos />} />
         <Route path="/perfil" element={<PerfilCliente />} />
         <Route path="/principal" element={<Principal />} />
         <Route path="/rutina/:id" element={<RutinaDetalles />} />

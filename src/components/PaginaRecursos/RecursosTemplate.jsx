@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import CabezalRecursos from './CabezalRecursos';
-import SeccionPreguntaRecomendacion from './SeccionPreguntaRecomendacion';
-import SeccionAlimentos from './SeccionAlimentos';
-import VentanaDetallesComida from '../ModalRecursosInfoComida/VentanaDetallesComida';
-import './RecursosTemplate.css';
+import React, { useEffect, useState } from "react";
+import CabezalRecursos from "./CabezalRecursos";
+import SeccionPreguntaRecomendacion from "./SeccionPreguntaRecomendacion";
+import SeccionAlimentos from "./SeccionAlimentos";
+import VentanaDetallesComida from "../ModalRecursosInfoComida/VentanaDetallesComida";
+import "./RecursosTemplate.css";
 
 const RecursosTemplate = ({ onBack }) => {
-  const [pregunta, setPregunta] = useState('');
-  const [respuesta, setRespuesta] = useState('');
+  const [pregunta, setPregunta] = useState("");
+  const [respuesta, setRespuesta] = useState("");
   const [selectedComida, setSelectedComida] = useState(null);
 
   useEffect(() => {
-    fetch('https://661037cf0640280f219c98d3.mockapi.io/api/gym/Clases')
+    fetch("https://661037cf0640280f219c98d3.mockapi.io/api/gym/Clases")
       .then((response) => response.json())
       .then((data) => {
         const randomData = data[Math.floor(Math.random() * data.length)];
@@ -34,7 +34,10 @@ const RecursosTemplate = ({ onBack }) => {
       <SeccionPreguntaRecomendacion pregunta={pregunta} respuesta={respuesta} />
       <SeccionAlimentos onSelectComida={handleSelectComida} />
       {selectedComida && (
-        <VentanaDetallesComida comida={selectedComida} onClose={handleCloseComida} />
+        <VentanaDetallesComida
+          comida={selectedComida}
+          onClose={handleCloseComida}
+        />
       )}
     </div>
   );

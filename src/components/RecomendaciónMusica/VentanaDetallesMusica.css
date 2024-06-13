@@ -1,0 +1,45 @@
+.VentanaDetallesMusica {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.VentanaDetallesMusicaContenido {
+  background-color: #2b2024;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.DetallesMusicaImagen {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.SeccionDetallesMusica h1 {
+  color: #fd0054;
+}
+
+.SeccionDetallesMusica .iconos-musica {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.SeccionDetallesMusica .iconos-musica span {
+  color: #fff;
+}

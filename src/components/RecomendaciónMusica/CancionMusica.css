@@ -1,0 +1,20 @@
+.CancionMusica {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.CancionMusica div {
+  display: flex;
+  align-items: center;
+}
+
+.CancionMusica .titulo-cancion {
+  margin-left: 10px;
+  color: #e91e63;
+}
+
+.CancionMusica .duracion-cancion {
+  color: #666;
+}
