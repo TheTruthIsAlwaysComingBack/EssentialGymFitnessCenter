@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #e91e63;
+  overflow-y: hidden;
+  background-color: var(--cafe);
   color: #fff;
-  width: 430px;
-  height: 932px;
+  width: 100%;
 }
 
 .encabezado-pagina {
@@ -24,5 +24,11 @@
   padding: 10px;
   border-top: 1px solid #ccc;
   display: flex;
+  background-color: var(--cafe);
   align-items: center;
+}
+
+.pagina-comunidad-contenido {
+  height: 90%;
+  overflow-y: scroll;
 }

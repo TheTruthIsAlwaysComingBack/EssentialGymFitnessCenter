@@ -86,31 +86,34 @@ const HeaderHome = ({ username }) => {
                   {activeSubmenu === "home" && (
                     <div className="submenu">
                       <Link
-                        to="/home/overview"
+                        to="/suscripciones"
                         onClick={() => setIsOpen(false)}
                       >
-                        Overview
+                        Suscripciones
                       </Link>
-                      <Link to="/home/details" onClick={() => setIsOpen(false)}>
-                        Details
+                      <Link
+                        to="/servicioalcliente"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Operador
                       </Link>
                     </div>
                   )}
                 </div>
                 <div>
                   <button onClick={() => handleSubmenuClick("about")}>
-                    About
+                    Recursos
                   </button>
                   {activeSubmenu === "about" && (
                     <div className="submenu">
-                      <Link to="/about/team" onClick={() => setIsOpen(false)}>
-                        Team
+                      <Link to="/clases" onClick={() => setIsOpen(false)}>
+                        Clases
                       </Link>
-                      <Link
-                        to="/about/company"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        Company
+                      <Link to="/comunidad" onClick={() => setIsOpen(false)}>
+                        Comunidad
+                      </Link>
+                      <Link to="/recursos" onClick={() => setIsOpen(false)}>
+                        Nutricion
                       </Link>
                     </div>
                   )}

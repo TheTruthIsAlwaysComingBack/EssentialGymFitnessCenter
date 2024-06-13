@@ -1,8 +1,9 @@
 .boton-enviar {
-  background-color: #333;
+  background-color: var(--rosa);
   color: #ffffff;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
   width: 90px;
-  height: 56px;
+  height: 35.4px;
 }

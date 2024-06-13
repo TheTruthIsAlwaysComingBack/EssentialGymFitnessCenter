@@ -1,6 +1,6 @@
 // PaginaComunidad.jsx
 import React, { useState, useEffect } from "react";
-import EncabezadoPagina from "../organisms/EncabezadoPagina";
+import Header from "../../header/Header";
 import ListaMensajes from "../organisms/ListaMensajes";
 import CampoEntrada from "../molecules/CampoEntrada";
 import "./PaginaComunidad.css";
@@ -41,8 +41,10 @@ const PaginaComunidad = () => {
 
   return (
     <div className="pagina-comunidad">
-      <EncabezadoPagina titulo="COMUNIDAD" miembros={87} />
-      <ListaMensajes mensajes={mensajes} />
+      <Header seccion="comunidad" />
+      <div className="pagina-comunidad-contenido">
+        <ListaMensajes mensajes={mensajes} />
+      </div>
       <CampoEntrada
         value={mensaje}
         onChange={(e) => setMensaje(e.target.value)}

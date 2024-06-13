@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CabezalRecursos from "./CabezalRecursos";
+import Header from "../header/Header";
 import SeccionPreguntaRecomendacion from "./SeccionPreguntaRecomendacion";
 import SeccionAlimentos from "./SeccionAlimentos";
 import VentanaDetallesComida from "../ModalRecursosInfoComida/VentanaDetallesComida";
@@ -30,15 +30,20 @@ const RecursosTemplate = ({ onBack }) => {
 
   return (
     <div className="RecursosTemplate">
-      <CabezalRecursos onBack={onBack} />
-      <SeccionPreguntaRecomendacion pregunta={pregunta} respuesta={respuesta} />
-      <SeccionAlimentos onSelectComida={handleSelectComida} />
-      {selectedComida && (
-        <VentanaDetallesComida
-          comida={selectedComida}
-          onClose={handleCloseComida}
+      <Header seccion="Nutricion" />
+      <div className="recursos-container-template">
+        <SeccionPreguntaRecomendacion
+          pregunta={pregunta}
+          respuesta={respuesta}
         />
-      )}
+        <SeccionAlimentos onSelectComida={handleSelectComida} />
+        {selectedComida && (
+          <VentanaDetallesComida
+            comida={selectedComida}
+            onClose={handleCloseComida}
+          />
+        )}
+      </div>
     </div>
   );
 };
