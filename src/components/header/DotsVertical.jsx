@@ -54,11 +54,11 @@ const DotsVertical = () => {
             <button onClick={() => handleSubmenuClick("about")}>About</button>
             {activeSubmenu === "about" && (
               <div className="submenu-general">
-                <Link to="/about/team" onClick={() => setIsOpen(false)}>
-                  Team
+                <Link to="/clases" onClick={() => setIsOpen(false)}>
+                  Clases
                 </Link>
-                <Link to="/about/company" onClick={() => setIsOpen(false)}>
-                  Company
+                <Link to="/comunidad" onClick={() => setIsOpen(false)}>
+                  Comunidad
                 </Link>
               </div>
             )}
