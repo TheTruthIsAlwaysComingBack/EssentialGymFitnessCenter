@@ -4,3 +4,22 @@
   height: 100vh;
   overflow-y: scroll;
 }
+
+.CabezalRecursos {
+  display: flex;
+  align-items: center;
+}
+
+.CabezalRecursos button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.CabezalRecursos h1 {
+  margin: 0;
+  margin-left: 10px;
+  color: #fd0054;
+}

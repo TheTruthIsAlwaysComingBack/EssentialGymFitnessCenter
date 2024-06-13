@@ -1,0 +1,24 @@
+.AudioControlButton {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.icon-play::before {
+  content: "▶️";
+}
+
+.icon-pause::before {
+  content: "⏸️";
+}
+
+.icon-next::before {
+  content: "⏭️";
+}
+
+.icon-prev::before {
+  content: "⏮️";
+}

@@ -1,0 +1,14 @@
+.SeccionMusica {
+  padding: 20px;
+}
+
+.SeccionMusica h3 {
+  color: #fd0054;
+  margin-bottom: 10px;
+}
+
+.contenedor-musica {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
