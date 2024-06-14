@@ -13,7 +13,7 @@ const TarjetaClaseASus = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("https://661037cf0640280f219c98d3.mockapi.io/api/gym/Clases")
+    fetch("https://663d4e0617145c4d8c3937bf.mockapi.io/subscripcion")
       .then((response) => response.json())
       .then((data) => {
         const randomClass = data[Math.floor(Math.random() * data.length)];
@@ -31,7 +31,7 @@ const TarjetaClaseASus = () => {
       return;
     }
 
-    fetch("https://661037cf0640280f219c98d3.mockapi.io/api/gym/Clases", {
+    fetch("https://663d4e0617145c4d8c3937bf.mockapi.io/subscripcion", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

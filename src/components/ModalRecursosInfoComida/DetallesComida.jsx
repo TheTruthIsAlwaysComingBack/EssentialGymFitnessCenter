@@ -9,11 +9,11 @@ const DetallesComida = ({ titulo, tiempo, calorias, imagen }) => (
     <div className="DetallesComidaInfo">
       <span>
         <IconoCronometro />
-        {tiempo} minutos
+        {tiempo}
       </span>
       <span>
         <IconoFuego />
-        {calorias} Cal
+        {calorias}
       </span>
     </div>
     <div

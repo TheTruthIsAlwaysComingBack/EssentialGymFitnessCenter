@@ -41,7 +41,7 @@ const PaginaComunidad = () => {
 
   return (
     <div className="pagina-comunidad">
-      <Header seccion="comunidad" />
+      <Header seccion="Comunidad" />
       <div className="pagina-comunidad-contenido">
         <ListaMensajes mensajes={mensajes} />
       </div>

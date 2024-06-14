@@ -1,7 +1,6 @@
 // ModalInfoClase.jsx
 import React from "react";
 import CoachesPage from "../../ContenidoBotonInfo/TarjetaEntrenadores/CoachesPage";
-import TarjetaDesClase from "../../ContenidoBotonInfo/TarjetaDescripciónClase/TarjetaDesClase";
 import TarjetaClaseASus from "../../ContenidoBotonInfo/TarjetaClaseASuscribirse/TarjetaClaseASus";
 import VentanaGracias from "../../VentanaGraciasSus/VentanaGracias";
 import "./ModalInfoClase.css";
@@ -19,11 +18,9 @@ const ModalInfoClase = ({ isOpen, onClose }) => {
           </button>
         </div>
         <div className="info-contenedor">
-          <TarjetaDesClase />
           <CoachesPage />
           <TarjetaClaseASus />
         </div>
-        <div className="linea-blanca"></div>
       </div>
     </div>
   );

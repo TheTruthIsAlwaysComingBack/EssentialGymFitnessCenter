@@ -1,25 +1,17 @@
 import React from "react";
 import MensajeVentanaGracias from "./MensajeVentanaGracias";
 import BotonAceptarGracias from "./BotonAceptarGracias";
-import "./VentanaGracias.css"
+import "./VentanaGracias.css";
 
-const VentanaGracias = ({ onClose, verSuscripciones }) => (
+const VentanaGracias = ({ onClose }) => (
   <div className="VentanaGracias">
     <div className="VentanaGraciasContenido">
       <MensajeVentanaGracias
-        titulo="GRACIAS!!"
-        mensaje="Tu suscripción se guardo en tu perfil."
+        titulo="GRACIAS!"
+        mensaje="Te suscribiste a una clase."
       />
-      <BotonAceptarGracias
-        text="VER SUSCRIPCIÓN"
-        onClick={verSuscripciones}
-        type="primary"
-      />
-      <BotonAceptarGracias
-        text="ACEPTAR"
-        onClick={onClose}
-        type="secondary"
-      />
+
+      <BotonAceptarGracias text="ACEPTAR" onClick={onClose} type="secondary" />
     </div>
   </div>
 );

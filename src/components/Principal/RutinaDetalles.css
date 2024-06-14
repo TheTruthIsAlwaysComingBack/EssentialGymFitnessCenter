@@ -5,46 +5,7 @@
   overflow-y: hidden;
   background-color: var(--cafe);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.rutina-detalles h2 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.rutina-detalles h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.rutina-detalles h4 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.rutina-detalles ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.rutina-detalles li {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: var(--gray);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.rutina-detalles li p {
-  margin: 0;
-}
-
-.rutina-detalles li strong {
-  font-weight: bold;
+  color: #ffffff;
 }
 
 .rutina-container-detalles {
@@ -54,4 +15,58 @@
   overflow-y: scroll;
   height: 100%;
   padding-bottom: 10rem;
+}
+
+.rutina-detalles h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fd0054;
+  text-align: center;
+}
+
+.rutina-detalles h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #fd0054;
+  border-bottom: 2px solid #fd0054;
+  padding-bottom: 5px;
+}
+
+.rutina-detalles h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fd0054;
+}
+
+.rutina-detalles ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.rutina-detalles li {
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.rutina-detalles li:hover {
+  background-color: #444;
+}
+
+.rutina-detalles li p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.rutina-detalles li strong {
+  font-weight: bold;
+  color: #fd0054;
 }

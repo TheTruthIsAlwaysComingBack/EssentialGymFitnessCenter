@@ -28,8 +28,16 @@ const DateInfoTarClaseASus = ({ day, date1, date2, slots, onTimeSelect }) => {
       <h2 className="TituloDateInfoTarClaseASus">Día</h2>
       <p>{daysMap[day]}</p>
       <h2 className="TituloDateInfoTarClaseASus">Hora</h2>
-      <RaBotonTarClaseASus etiqueta={formattedDate1} nombre={`time-${day}`} onChange={() => onTimeSelect(date1)} />
-      <RaBotonTarClaseASus etiqueta={formattedDate2} nombre={`time-${day}`} onChange={() => onTimeSelect(date2)} />
+      <RaBotonTarClaseASus
+        etiqueta={formattedDate1}
+        nombre={`time-${day}`}
+        onChange={() => onTimeSelect(date1)}
+      />
+      <RaBotonTarClaseASus
+        etiqueta={formattedDate2}
+        nombre={`time-${day}`}
+        onChange={() => onTimeSelect(date2)}
+      />
       <h2 className="TituloDateInfoTarClaseASus">Cupos</h2>
       <p>{slots}</p>
     </div>

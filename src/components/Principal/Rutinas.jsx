@@ -26,7 +26,7 @@ const Rutinas = () => {
 
   return (
     <div className="rutinas">
-      <h2>Rutinas</h2>
+      <h2>Rutinas Comerciales</h2>
       <div className="rutinas-list">
         {rutinas.map((rutina) => (
           <Link

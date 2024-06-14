@@ -1,6 +1,6 @@
 .EntrenadoresTemplate {
   padding: 20px;
-  background-color: #2b2024;
+  background-color: var(--cafe);
   height: 100vh;
   overflow-y: hidden;
 }

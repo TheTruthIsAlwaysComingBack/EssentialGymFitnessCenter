@@ -30,7 +30,7 @@
 }
 
 .ContenidoPerfilEntrenador {
-  background: #2b2024;
+  background: var(--cafe);
   width: 100%;
   max-width: 600px;
   border-radius: 0 0 10px 10px;

@@ -28,5 +28,5 @@
 .coach-info h5 {
   margin: 0;
   font-size: 0.98em;
-  color: #e91e63;
+  color: var(--rosa);
 }
