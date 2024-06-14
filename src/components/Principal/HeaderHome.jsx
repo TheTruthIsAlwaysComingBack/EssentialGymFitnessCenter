@@ -1,15 +1,49 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./HeaderHome.css";
 
-const HeaderHome = ({ username }) => {
+const HeaderHome = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(null);
+  const [user, setUser] = useState(null);
+  const [frases, setFrases] = useState([]);
+  const [currentFraseIndex, setCurrentFraseIndex] = useState(0);
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
+
+  useEffect(() => {
+    const fetchFrases = async () => {
+      try {
+        const response = await fetch(
+          "https://663d4e0617145c4d8c3937bf.mockapi.io/frases"
+        );
+        const data = await response.json();
+        setFrases(data);
+      } catch (error) {
+        console.error("Error fetching frases:", error);
+      }
+    };
+
+    fetchFrases();
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentFraseIndex((prevIndex) => (prevIndex + 1) % frases.length);
+    }, 20000);
+
+    return () => clearInterval(interval);
+  }, [frases]);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
     if (isOpen) {
-      setActiveSubmenu(null); // Cerrar submenú al cerrar el menú principal
+      setActiveSubmenu(null);
     }
   };
 
@@ -21,14 +55,14 @@ const HeaderHome = ({ username }) => {
     <div className="header-home">
       <div className="header-inicio-principal">
         <div className="header-left">
-          <h1>Hola, {username}</h1>
+          <h1>Hola, {user ? user.nombre : "Invitado"}</h1>
           <p className="mensaje-inicial">
             Es hora de poner a prueba tus límites
           </p>
         </div>
         <div className="header-right">
           <div className="icon-container">
-            <Link to="/notifications">
+            <Link to="/notificaciones">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -129,6 +163,11 @@ const HeaderHome = ({ username }) => {
             )}
           </div>
         </div>
+      </div>
+      <div className="header-center">
+        {frases.length > 0 && (
+          <p className="frase-carrusel">{frases[currentFraseIndex].frase}</p>
+        )}
       </div>
     </div>
   );

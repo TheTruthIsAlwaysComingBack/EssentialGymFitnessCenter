@@ -1,0 +1,27 @@
+.ejercicio {
+    background-color: #c7b2ba;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .contenido-ejercicio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .titulo-ejercicio {
+    color: #fd0054;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .lista {
+    list-style-type: disc;
+    padding-left: 3rem;
+    align-self: flex-start;
+  }
+  

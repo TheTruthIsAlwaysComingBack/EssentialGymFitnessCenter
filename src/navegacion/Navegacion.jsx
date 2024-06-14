@@ -13,6 +13,8 @@ import PerfilCliente from "../routes/membresia/PerfilCliente";
 import Principal from "../routes/principal/Principal";
 import CoachDetail from "../components/Principal/CoachDetail";
 import RutinaDetalles from "../components/Principal/RutinaDetalles";
+import Rutina from "../routes/Rutina/Rutina";
+import Notificaciones from "../routes/Notificacion/Notificaciones";
 
 const Navegacion = () => {
   return (
@@ -31,6 +33,8 @@ const Navegacion = () => {
         <Route path="/perfil" element={<PerfilCliente />} />
         <Route path="/principal" element={<Principal />} />
         <Route path="/rutina/:id" element={<RutinaDetalles />} />
+        <Route path="/rutinaA" element={<Rutina />} />
+        <Route path="/notificaciones" element={<Notificaciones />} />
       </Routes>
     </Router>
   );

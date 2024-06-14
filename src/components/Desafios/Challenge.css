@@ -1,0 +1,28 @@
+.challenge {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--gris);
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  .challenge-button {
+    background: none;
+    border: none;
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    font-size: 1.8rem;
+    cursor: pointer;
+    text-align: left;
+  }
+  .next-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .next-button svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--principalRosa);
+  }
+  

@@ -1,0 +1,13 @@
+.dia {
+    background-color: #fd0054;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .dia.activo {
+    background-color: #8b8b8b;
+  }
+  
