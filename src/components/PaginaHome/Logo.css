@@ -1,0 +1,9 @@
+.image-dumbell-container-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-dumbell-container-logo .icon {
+  stroke: var(--rosa);
+}

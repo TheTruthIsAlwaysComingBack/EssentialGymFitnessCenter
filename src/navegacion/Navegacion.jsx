@@ -14,11 +14,13 @@ import CoachDetail from "../components/Principal/CoachDetail";
 import RutinaDetalles from "../components/Principal/RutinaDetalles";
 import Rutina from "../routes/Rutina/Rutina";
 import Notificaciones from "../routes/Notificacion/Notificaciones";
+import Home from "../routes/Home/Home";
 
 const Navegacion = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Logueo />} />
         <Route path="/clases" element={<PaginaClases />} />
         <Route path="/register" element={<Registrarse />} />
