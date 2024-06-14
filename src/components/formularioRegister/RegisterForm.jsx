@@ -15,11 +15,25 @@ const RegisterForm = ({ onSubmit }) => {
   const [sexo, setSexo] = useState("");
   const [foto, setFoto] = useState("");
   const [contrasena, setContrasena] = useState("");
+  const [edad, setEdad] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
+  const calcularEdad = (fecha) => {
+    const hoy = new Date();
+    const fechaNacimiento = new Date(fecha);
+    let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+    const mes = hoy.getMonth() - fechaNacimiento.getMonth();
+    if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimiento.getDate())) {
+      edad--;
+    }
+    return edad;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const edadCalculada = calcularEdad(fechaNacimiento);
+
     try {
       const newUser = {
         nombre,
@@ -31,6 +45,9 @@ const RegisterForm = ({ onSubmit }) => {
         sexo,
         foto,
         contrasena,
+        edad: `${edadCalculada} años`,
+        estado: "Activo",
+        rol: "cliente",
       };
 
       const response = await axios.post(
@@ -84,7 +101,10 @@ const RegisterForm = ({ onSubmit }) => {
         type="date"
         placeholder="Fecha de nacimiento"
         value={fechaNacimiento}
-        onChange={(e) => setFechaNacimiento(e.target.value)}
+        onChange={(e) => {
+          setFechaNacimiento(e.target.value);
+          setEdad(calcularEdad(e.target.value));
+        }}
       />
       <Input
         type="text"
@@ -118,8 +138,8 @@ const RegisterForm = ({ onSubmit }) => {
           onChange={(e) => setSexo(e.target.value)}
         >
           <option value="">Seleccione su sexo</option>
-          <option value="Hombre">Hombre</option>
-          <option value="Mujer">Mujer</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
         </select>
       </div>
       <Input type="file" placeholder="Subir foto" onChange={handleFotoChange} />

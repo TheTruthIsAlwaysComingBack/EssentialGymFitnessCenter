@@ -22,7 +22,7 @@
 .editar-perfil-form button {
   padding: 10px;
   font-size: 16px;
-  background-color: #4caf50;
+  background-color: var(--rosa);
   color: white;
   border: none;
   cursor: pointer;
@@ -30,7 +30,7 @@
 }
 
 .editar-perfil-form button:hover {
-  background-color: #45a049;
+  background-color: var(--gray);
 }
 
 .image-preview {

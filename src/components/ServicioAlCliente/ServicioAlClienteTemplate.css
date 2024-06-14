@@ -1,5 +1,6 @@
 .ServicioAlClienteTemplate {
-  background-color: #2b2024;
+  padding: 40px;
+  background-color: var(--cafe);
   text-align: center;
 }
 

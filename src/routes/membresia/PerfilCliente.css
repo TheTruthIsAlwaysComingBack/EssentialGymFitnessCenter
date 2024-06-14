@@ -10,3 +10,11 @@
   overflow: scroll;
   padding: 1rem 2rem;
 }
+
+.perfil-container .boton-route {
+  height: 3rem;
+  background-color: var(--bg);
+  border: 1px solid var(--cafe);
+  font-size: 1.6rem;
+  border-radius: 1rem;
+}

@@ -3,29 +3,22 @@ import CoachesSection from "./CoachesSection";
 import "./CoachesPage.css";
 
 const CoachesPage = () => {
-  const [coaches, setCoaches] = useState([]);
+  const [coach, setCoach] = useState(null);
 
   useEffect(() => {
-    fetch("https://661037cf0640280f219c98d3.mockapi.io/api/gym/Trainer")
+    fetch("https://663d4e0617145c4d8c3937bf.mockapi.io/moreentrenadores")
       .then((response) => response.json())
       .then((data) => {
-        const randomCoaches = [];
-        const numberOfCoaches = Math.floor(Math.random() * data.length) + 2;
-        for (let i = 0; i < numberOfCoaches; i++) {
+        if (data.length > 0) {
           const randomCoach = data[Math.floor(Math.random() * data.length)];
-          randomCoaches.push(randomCoach);
+          setCoach(randomCoach);
         }
-        setCoaches(randomCoaches);
       });
   }, []);
 
   return (
     <div className="coaches-page">
-      {coaches.length > 0 ? (
-        <CoachesSection coaches={coaches} />
-      ) : (
-        <p>Loading...</p>
-      )}
+      {coach ? <CoachesSection coaches={[coach]} /> : <p>Loading...</p>}
     </div>
   );
 };

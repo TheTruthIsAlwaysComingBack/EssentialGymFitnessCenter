@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./ContactFormServAlCliente.css";
 import FormGroupServAlCliente from "./FormGroupServAlCliente";
 import ButtonServAlCliente from "./ButtonServAlCliente";
@@ -19,28 +20,23 @@ const ContactFormServAlCliente = () => {
     });
   };
 
-  const handleSubmit = () => {
-    fetch("https://661037cf0640280f219c98d3.mockapi.io/api/gym/Contacto", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        alert("Mensaje enviado correctamente");
-        setFormData({
-          nombre: "",
-          email: "",
-          asunto: "",
-          mensaje: "",
-        });
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        alert("Error al enviar el mensaje");
+  const handleSubmit = async () => {
+    try {
+      await axios.post("https://663d4e0617145c4d8c3937bf.mockapi.io/contacto", {
+        ...formData,
+        tipo: "queja",
       });
+      alert("Mensaje enviado correctamente");
+      setFormData({
+        nombre: "",
+        email: "",
+        asunto: "",
+        mensaje: "",
+      });
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Error al enviar el mensaje");
+    }
   };
 
   return (

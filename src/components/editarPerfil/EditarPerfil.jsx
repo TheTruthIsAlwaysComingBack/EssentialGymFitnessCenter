@@ -3,7 +3,17 @@ import axios from "axios";
 import "./EditarPerfil.css";
 
 const EditarPerfil = ({ user, onUpdate }) => {
-  const [formData, setFormData] = useState({ ...user });
+  const [formData, setFormData] = useState({
+    nombre: user.nombre,
+    fechaNacimiento: user.fechaNacimiento,
+    direccion: user.direccion,
+    numeroCelular: user.numeroCelular,
+    email: user.email,
+    ci: user.ci,
+    sexo: user.sexo,
+    foto: user.foto,
+    contrasena: user.contrasena,
+  });
   const [imageUploading, setImageUploading] = useState(false);
   const [imagePreview, setImagePreview] = useState(user.foto);
 
@@ -45,7 +55,7 @@ const EditarPerfil = ({ user, onUpdate }) => {
         `https://663d4e0617145c4d8c3937bf.mockapi.io/users/${user.id}`,
         formData
       );
-      onUpdate(formData);
+      onUpdate({ ...user, ...formData });
     } catch (error) {
       console.error("Error updating user:", error);
     }

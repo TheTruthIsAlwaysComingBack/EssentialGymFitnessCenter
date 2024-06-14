@@ -49,7 +49,9 @@ const PerfilCliente = () => {
         ) : (
           <>
             <InformacionUsuario user={{ ...user, membresia: membership }} />
-            <button onClick={() => setEditing(true)}>Editar Perfil</button>
+            <button className="boton-route" onClick={() => setEditing(true)}>
+              Editar Perfil
+            </button>
           </>
         )}
       </div>

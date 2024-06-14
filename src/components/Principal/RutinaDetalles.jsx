@@ -32,7 +32,7 @@ const RutinaDetalles = () => {
 
   return (
     <div className="rutina-detalles">
-      <Header seccion="Rutina" />
+      <Header seccion="Rutinas Comerciales" />
       <div className="rutina-container-detalles">
         <h2>{rutina.NombreRutina}</h2>
         {Object.entries(rutina.rutina).map(([dia, ejercicios]) => (

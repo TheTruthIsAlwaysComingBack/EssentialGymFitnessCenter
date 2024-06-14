@@ -7,7 +7,7 @@ const SemanaClases = () => {
   const [clases, setClases] = useState([]);
 
   useEffect(() => {
-    fetch("https://661037cf0640280f219c98d3.mockapi.io/api/gym/Clases")
+    fetch("https://663d4e0617145c4d8c3937bf.mockapi.io/subscripcion")
       .then((response) => response.json())
       .then((data) => {
         const diasDeLaSemana = [

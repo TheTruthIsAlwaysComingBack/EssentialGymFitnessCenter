@@ -1,6 +1,4 @@
 .SeccionDetallesComida {
   padding: 20px;
-  background-color: #2b2024;
-  border-radius: 10px;
-  margin: 10px 0;
+  background-color: var(--cafe);
 }

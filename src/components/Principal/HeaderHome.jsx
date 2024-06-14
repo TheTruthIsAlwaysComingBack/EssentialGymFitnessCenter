@@ -120,12 +120,6 @@ const HeaderHome = () => {
                   {activeSubmenu === "home" && (
                     <div className="submenu">
                       <Link
-                        to="/suscripciones"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        Suscripciones
-                      </Link>
-                      <Link
                         to="/servicioalcliente"
                         onClick={() => setIsOpen(false)}
                       >

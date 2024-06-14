@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Header from "../header/Header";
-import SeccionPreguntaRecomendacion from "./SeccionPreguntaRecomendacion";
 import SeccionAlimentos from "./SeccionAlimentos";
 import VentanaDetallesComida from "../ModalRecursosInfoComida/VentanaDetallesComida";
 import "./RecursosTemplate.css";
@@ -32,10 +31,6 @@ const RecursosTemplate = ({ onBack }) => {
     <div className="RecursosTemplate">
       <Header seccion="Nutricion" />
       <div className="recursos-container-template">
-        <SeccionPreguntaRecomendacion
-          pregunta={pregunta}
-          respuesta={respuesta}
-        />
         <SeccionAlimentos onSelectComida={handleSelectComida} />
         {selectedComida && (
           <VentanaDetallesComida
