@@ -64,3 +64,13 @@
 .entrenador-item p {
   margin: 0;
 }
+
+.ver-mas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ver-mas .icon {
+  stroke: none;
+}
