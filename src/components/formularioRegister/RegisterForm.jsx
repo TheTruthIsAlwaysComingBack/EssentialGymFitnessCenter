@@ -57,7 +57,7 @@ const RegisterForm = ({ onSubmit }) => {
 
       if (response.status === 201) {
         onSubmit(newUser);
-        navigate("/");
+        navigate("/login");
       } else {
         console.error("Error al registrar usuario", response);
       }

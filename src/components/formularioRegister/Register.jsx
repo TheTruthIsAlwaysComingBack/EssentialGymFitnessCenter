@@ -19,7 +19,7 @@ const Register = ({ onSubmit }) => {
         <RegisterForm onSubmit={onSubmit} />
       </div>
       <p>
-        ¿Ya tienes una cuenta? <NavLink to="/">Inicia Sesión</NavLink>
+        ¿Ya tienes una cuenta? <NavLink to="/login">Inicia Sesión</NavLink>
       </p>
     </div>
   );

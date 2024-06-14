@@ -19,7 +19,7 @@ const Navegacion = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Logueo />} />
+        <Route path="/login" element={<Logueo />} />
         <Route path="/clases" element={<PaginaClases />} />
         <Route path="/register" element={<Registrarse />} />
         <Route path="/chat" element={<Chat />} />

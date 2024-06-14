@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./HeaderHome.css";
 
 const HeaderHome = () => {
@@ -8,6 +8,7 @@ const HeaderHome = () => {
   const [user, setUser] = useState(null);
   const [frases, setFrases] = useState([]);
   const [currentFraseIndex, setCurrentFraseIndex] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
@@ -49,6 +50,12 @@ const HeaderHome = () => {
 
   const handleSubmenuClick = (menu) => {
     setActiveSubmenu(activeSubmenu === menu ? null : menu);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    setUser(null);
+    navigate("/login");
   };
 
   return (
@@ -153,6 +160,9 @@ const HeaderHome = () => {
                 >
                   Chat
                 </Link>
+                <button onClick={handleLogout} className="logout-button">
+                  Cerrar Sesión
+                </button>
               </div>
             )}
           </div>
